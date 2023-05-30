@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+li {
+  display: inline;
+  padding-left: 2%;
+}
+
+.header-container-1 {
+  background-color: #222222;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  width: 100vw;
+  height: 4vh;
+  align-items: center;
+  font-size: 1vw;
+  padding: 0.1vw 5vw;
+}
+
+.header-container-2 {
+  background-color: #f0a83e;
+  display: flex;
+  height: 12.6vh;
+}
+.logo-base-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.nav-links-container {
+  width: 50%;
+  display: flex;
+}
+.header-container-list {
+  list-style: none;
+}
+
+.logo-base {
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  line-height: 23.44px;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding-left: 4vw;
+}
+
+.logo-first {
+  color: #3c2313;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
+.logo-image {
+  height: 1.6vw;
+}
+
+.nav-links {
+  list-style: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-links-ul {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-right: 4vw;
+}
+.paw-small {
+  height: 2.9vh;
+}
+
+.nav-span {
+  font-size: 1.4vw;
+}
+.top-annoucement {
+  display: block;
+  width: 70%;
+}
+.top-dropdowns-span {
+  display: flex;
+  width: 30%;
+  justify-content: right;
+}
+
+.nav-drop-field {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.8vh;
+}
+
+.nav-drop-btn {
+  background-color: #222222;
+  color: white;
+}
+.hero {
+  background-image: url("../img/Bowl.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-announcement-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-announcement {
+  display: flex;
+  align-items: center;
+  font-size: 2.5vw;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 1%;
+  margin-right: 2%;
+  line-height: 4vw;
+}
+.hero-text {
+}
+
+header {
+}
