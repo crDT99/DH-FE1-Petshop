@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
 * {
   font-family: Roboto, sans-serif;
@@ -6,6 +6,12 @@
   padding: 0%;
   box-sizing: border-box;
 }
+:root {
+  --Brown: #3c2313;
+  --Square: #fbfaf6;
+  --Orange: #f0a83e;
+}
+
 li {
   display: inline;
   padding-left: 2%;
@@ -24,7 +30,7 @@ li {
 }
 
 .header-container-2 {
-  background-color: #f0a83e;
+  background-color: var(--Orange);
   display: flex;
   height: 12.6vh;
 }
@@ -115,25 +121,121 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-.hero-announcement-container {
-  width: 100%;
+.column {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.end-aling {
+  align-items: flex-end;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  width: 40%;
 }
 
 .hero-announcement {
-  display: flex;
-  align-items: center;
   font-size: 2.5vw;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   font-weight: 400;
   padding: 1%;
-  margin-right: 2%;
   line-height: 4vw;
-}
-.hero-text {
+  text-align: center;
 }
 
-header {
+.hero-text {
+  padding: 3% 0;
+}
+.hero-btn {
+  background-color: var(--Orange);
+  color: white;
+  width: 12vw;
+  padding: 2% 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+  border-radius: 0.5vw;
+  border: none;
+}
+
+.pawbig {
+  width: 8vw;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0;
+}
+
+.products-title {
+  color: var(--Brown);
+  font-size: 4vw;
+}
+
+.products-title {
+  color: var(--Brown);
+  font-size: 3vw;
+}
+.multicolumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.product-square {
+  padding: 4% 1%;
+}
+
+.product-price,
+.product-description {
+  text-align: center;
+  background-color: var(--Square);
+  font-weight: 500;
+  padding: 1% 0;
+}
+
+.product-description {
+  color: var(--Brown);
+}
+
+.product-price {
+  color: var(--Orange);
+  padding-bottom: 3%;
+}
+.contact-form {
+  align-items: center;
+}
+.contact-title {
+  padding: 1%;
+  color: var(--Brown);
+}
+.form-field {
+  background-color: var(--Brown);
+  width: 33vw;
+  border-radius: 1.5vw;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+::placeholder {
+  color: white;
+}
+
+.form-btn {
+  background-color: #8a8787;
+  border-radius: 1.5vw;
+  width: 10vw;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 3%;
+  border: none;
+}
+
+.amarillo {
+  background-color: var(--Orange);
 }
