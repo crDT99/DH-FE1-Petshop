@@ -12,60 +12,84 @@
   --Orange: #f0a83e;
 }
 
-li {
-  display: inline;
-  padding-left: 2%;
+.start-justified {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(0, 255, 255, 0.278);
 }
 
+.center-justified {
+  display: flex;
+  justify-content: center;
+}
+
+.end-justified {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(255, 0, 0, 0.231);
+}
+
+.center-aligned {
+  display: flex;
+  align-items: center;
+}
+
+.end-alinged {
+  display: flex;
+  align-items: flex-end;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 255, 0.44);
+}
+.warp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ---------------------- TOP OFFERS SECTION ----------------------------------- */
 .header-container-1 {
   background-color: #222222;
   color: white;
   font-weight: 400;
-  display: flex;
   width: 100vw;
   height: 4vh;
-  align-items: center;
   font-size: 1vw;
   padding: 0.1vw 5vw;
 }
+.header-container-1-annoucement {
+  width: 100%;
+  height: 100%;
+}
+
+.header-container-1-drops {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------- TOP LOGO AND NAVBAR SECTION ------------------------------- */
 
 .header-container-2 {
   background-color: var(--Orange);
-  display: flex;
-  height: 12.6vh;
+  height: 13vh;
 }
-.logo-base-container {
-  display: flex;
-  align-items: center;
-  width: 50%;
+
+/* LOGO */
+.header-container-2-logo-cont {
+  background-color: rgba(128, 0, 128, 0.236);
+  width: 100%;
 }
+
+/* NAV LINKS */
+
+.header-container-2-Navlinks {
+  background-color: rgba(47, 255, 144, 0.299);
+  width: 100%;
+}
+
 .nav-links-container {
-  width: 50%;
-  display: flex;
-}
-.header-container-list {
-  list-style: none;
-}
-
-.logo-base {
-  color: #ffffff;
-  font-size: 2vw;
-  font-weight: 700;
-  font-family: Roboto, sans-serif;
-  line-height: 23.44px;
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  padding-left: 4vw;
-}
-
-.logo-first {
-  color: #3c2313;
-  font-weight: 700;
-  font-family: Roboto, sans-serif;
-}
-.logo-image {
-  height: 1.6vw;
+  width: 100%;
 }
 
 .nav-links {
@@ -74,66 +98,73 @@ li {
   font-weight: 400;
   font-size: 13px;
   width: 100%;
-  display: flex;
-  align-items: center;
+  padding: 1vw;
 }
-.nav-links-ul {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  padding-right: 4vw;
-}
-.paw-small {
-  height: 2.9vh;
-}
+/* --------------------------- PAGE HERO  -------------------------------------- */
 
-.nav-span {
-  font-size: 1.4vw;
-}
-.top-annoucement {
-  display: block;
-  width: 70%;
-}
-.top-dropdowns-span {
-  display: flex;
-  width: 30%;
-  justify-content: right;
-}
-
-.nav-drop-field {
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 1.8vh;
-}
-
-.nav-drop-btn {
-  background-color: #222222;
-  color: white;
-}
+/* HERO BACKGROUND */
 .hero {
   background-image: url("../img/Bowl.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 83vh;
 }
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.H-column {
 }
-.end-aling {
-  align-items: flex-end;
+.hero-announcement-container {
+  width: 35vw;
+  padding: 0 1vw;
 }
 
 .hero-container {
-  display: flex;
-  justify-content: center;
-  width: 40%;
+}
+.hero-btn {
+  background-color: var(--Orange);
+  color: white;
+  width: 12vw;
+  padding: 1.2vw;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+  border-radius: 0.4vw;
+  border: none;
+}
+
+/* --------------------------- PAGE PRODUCTS SECTION  ----------------------------- */
+.section-product {
+  background-color: #f0a93e7c;
+}
+.remarkable-product {
+  height: 46.5vh;
+  background-color: rgba(0, 0, 255, 0.55);
+}
+
+.products-list-squares {
+  height: 63.5vh;
+  background-color: rgba(0, 128, 0, 0.725);
+}
+
+.section-contact {
+  height: 83vh;
+  background-color: rgba(221, 160, 221, 0.697);
+}
+
+.section-footer {
+  height: 61.5vh;
+  background-color: rgba(255, 255, 0, 0.758);
+}
+/* --------------------- TEXT STYLING  --------------------------- */
+li {
+  display: inline;
+  padding-left: 2%;
+}
+
+.top-annoucement {
+  font-size: 1vw;
+}
+.nav-span {
+  font-size: 1.4vw;
 }
 
 .hero-announcement {
@@ -141,33 +172,29 @@ li {
   background-color: white;
   border-radius: 0.5vw;
   font-weight: 400;
-  padding: 1%;
+  padding: 0.2vw;
   line-height: 4vw;
   text-align: center;
 }
 
 .hero-text {
-  padding: 3% 0;
-}
-.hero-btn {
-  background-color: var(--Orange);
-  color: white;
-  width: 12vw;
-  padding: 2% 0;
-  font-weight: 400;
-  font-style: normal;
+  padding: 3%;
   font-size: 1.5vw;
-  border-radius: 0.5vw;
-  border: none;
 }
 
-.pawbig {
-  width: 8vw;
+.logo-base {
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  line-height: 23.44px;
+  padding-left: 4vw;
+  padding: 1vw;
 }
-.centered-container {
-  display: flex;
-  justify-content: center;
-  padding: 1% 0;
+
+.hero-text {
+  padding: 3% 0;
+  color: var(--Brown);
 }
 
 .products-title {
@@ -175,67 +202,16 @@ li {
   font-size: 4vw;
 }
 
-.products-title {
-  color: var(--Brown);
-  font-size: 3vw;
-}
-.multicolumn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-between;
+/* ----------------  IMAGE OR ICONS STYLING ----------------------*/
+
+.paw-small {
+  height: 2.9vh;
 }
 
-.product-square {
-  padding: 4% 1%;
+.paw-big {
+  width: 8vw;
 }
 
-.product-price,
-.product-description {
-  text-align: center;
-  background-color: var(--Square);
-  font-weight: 500;
-  padding: 1% 0;
-}
-
-.product-description {
-  color: var(--Brown);
-}
-
-.product-price {
-  color: var(--Orange);
-  padding-bottom: 3%;
-}
-.contact-form {
-  align-items: center;
-}
-.contact-title {
-  padding: 1%;
-  color: var(--Brown);
-}
-.form-field {
-  background-color: var(--Brown);
-  width: 33vw;
-  border-radius: 1.5vw;
-  margin-bottom: 1%;
-  padding: 1%;
-}
-
-::placeholder {
-  color: white;
-}
-
-.form-btn {
-  background-color: #8a8787;
-  border-radius: 1.5vw;
-  width: 10vw;
-  text-align: center;
-  font-size: 1.5vw;
-  padding: 3%;
-  border: none;
-}
-
-.amarillo {
-  background-color: var(--Orange);
+.logo-image {
+  height: 1.6vw;
 }
